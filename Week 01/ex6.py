@@ -13,7 +13,7 @@ def elu(x) :
     else :
         return alpha * (math.exp(x) - 1)
     
-def calc_activation_func (x , act_name):
+def calc_activation_func(x, act_name):
     if act_name == 'sigmoid' :
         return sigmoid(x)
     elif act_name == 'relu' :
@@ -21,4 +21,4 @@ def calc_activation_func (x , act_name):
     elif act_name == 'elu' :
         return elu(x)
 
-print ( round ( calc_activation_func (x = 3 , act_name ='sigmoid') , 2) )
+print(round(calc_activation_func(x=3, act_name='sigmoid'), 2))

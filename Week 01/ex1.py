@@ -11,4 +11,4 @@ def calc_f1_score(tp, fp, fn):
     r = recall(tp, fn)
     return 2 * p * r / (p + r)
 
-print ( round ( calc_f1_score ( tp =2 , fp =4 , fn =5) , 2) )
+print(round(calc_f1_score(tp=2,fp=4,fn=5), 2))
