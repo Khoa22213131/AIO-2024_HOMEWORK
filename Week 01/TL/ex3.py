@@ -39,3 +39,14 @@ def mae(n_samples):
 def rmse(n_samples):
     
     return math.sqrt(mse(n_samples))
+
+def regression_loss_function(name='mse', n_samples=100):
+    if name == 'mse':
+        return mse(n_samples)
+    elif name == 'mae':
+        return mae(n_samples)
+    elif name == 'rmse':
+        return rmse(n_samples)
+    else:
+        print('Invalid loss function')
+        return
