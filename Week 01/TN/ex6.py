@@ -1,17 +1,4 @@
-import math
-
-def sigmoid(x) :
-    return 1 / (1 + math.exp(-x))
-
-def relu(x) :
-    return max(0, x)
-
-def elu(x) :
-    alpha = 0.01
-    if x >= 0 :
-        return x
-    else :
-        return alpha * (math.exp(x) - 1)
+from TL.ex2 import sigmoid, relu, elu
     
 def calc_activation_func(x, act_name):
     if act_name == 'sigmoid' :
