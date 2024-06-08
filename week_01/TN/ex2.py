@@ -7,5 +7,6 @@ def is_number(n):
       return False
     return True
 
-print(is_number(1))
-print(is_number('n'))
+if __name__ == '__main__':
+  print(is_number(1))
+  print(is_number('n'))
